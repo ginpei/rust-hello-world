@@ -20,6 +20,18 @@ $ rustup self uninstall
 
 - [Hello, World! - The Rust Programming Language](https://doc.rust-lang.org/book/ch01-02-hello-world.html)
 
+## I'm feeling lucky
+
+### `<>`, `'a`, and lifetime
+
+- [Lifetimes](https://doc.rust-lang.org/1.6.0/book/lifetimes.html)
+
+> The `'a` reads ‘the lifetime a’. Technically, every reference has some lifetime associated with it, but the compiler lets you elide (i.e. omit, see "Lifetime Elision" below) them in common cases.
+
+### `#[derive(Debug)]`
+
+### `Ok()`
+
 ## Errors
 
 ### Compile error on WSL
