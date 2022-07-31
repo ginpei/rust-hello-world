@@ -22,7 +22,7 @@ $ rustup self uninstall
 
 ## Errors
 
-On WSL.
+### Compile error on WSL
 
 ```console
 $ rustc main.rs 
@@ -35,4 +35,24 @@ error: aborting due to previous error
 
 ```console
 $ sudo apt install build-essential
+```
+
+### Weird type mismatches
+
+```rust
+let config = Config::new(&args).unwrap_or_else(|err| {
+    eprintln!("Problem parsing arguments: {}", err);
+    process::exit(1);
+});
+```
+
+```
+mismatched types
+expected struct `Config`, found `()`rustc (E0308)
+```
+
+Import something.
+
+```rust
+use std::process;
 ```
